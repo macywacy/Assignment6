@@ -67,13 +67,13 @@ objRequest.onreadystatechange = function()
 if (objRequest.readyState == 4 && objRequest.status == 200)
         {
             var output = JSON.parse(objRequest.responseText);
-        GenerateOutput2(output);
+        GenerateOutput3(output);
     }
 };
 objRequest.open("GET", url, true);
 objRequest.send();
 }
-function GenerateOutput2(result3)
+function GenerateOutput3(result3)
 {
 if (result3.DeleteCustomerResult.WasSuccessful == 1)
     { document.getElementById("result3").innerHTML = "The operation was successful!";}
