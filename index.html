@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+      <link rel="stylesheet" type="text/css" href="styles/assignment6.css" />
+      <script src="js/assignment6.js"></script>
+    <title>Assignment6, Macy Dofash</title>
+</head>
+
+<body>
+    <select onchange="menuchoice()" id="menu">
+        <option>Select</option>
+        <option>Add Customer</option>
+        <option>Change Ship-To Address</option>
+        <option>Delete Customer</option>
+    </select>
+    
+    <section id="section1" class="section1">
+        <label>Please Enter Customer ID:</label><br>
+        <input type="text" id="custid"><br>
+        <label class="example"> *The customer ID should be 5 uppercase text characters.*</label><br><br>
+        <label>Please Enter the Customer's Name:</label><br>
+        <input type="text" id="custname"><br>
+        <label>Please Enter the Customer's City:</label><br>
+        <input type="text" id="custcity"><br><hr>
+        <button onclick="CreateCustomer()" id="newcust">Add a New Customer</button><br>
+        <label id="result">The operation's result will display here.</label>
+    </section>
+    
+    <section id="section2" class="section2">
+         <label>Please Enter the Order Number:</label><br>
+        <input type="text" id="ordnum"><br>
+        <label>Please Enter the Ship-To Name:</label><br>
+        <input type="text" id="shiptoname"><br>
+        <label>Please Enter the Ship-To Address:</label><br>
+        <input type="text" id ="shipaddress"><br>
+        <label>Please Enter the Ship-To City:</label><br>
+        <input type="text" id="shiptocity"><br><hr>
+        <label>Please Enter the Ship-To Postal Code:</label><br>
+        <input type="text" id="shiptopost"><br><hr>
+        <button onclick="ChangeAddress()" id="changeaddress">Change Ship-To Address</button><br>
+        <label id="result2">The operation's result will display here.</label>
+        
+    </section>
+    <section id="section3" class="section3">
+        <label>Please Enter Customer ID:</label><br>
+        <input type="text" id="delcustid"><br><hr>
+        <button onclick="deletecust()" id="delcust">Delete Customer</button><br>
+        <label id="result3">The operation's result will display here.</label>
+    </section>
+
+
+</body>
+</html>
